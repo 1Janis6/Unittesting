@@ -37,11 +37,11 @@ public class SaveCalculatorTest {
         int summand2 = -1;
         assertTrue(testee.summe(summand1, summand2) == -1);
     }
-    @Test
+    @Test (expected = ArithmeticException.class)
     public void summeWithMaxValue() {
         SaveCalculator testee = new SaveCalculator();
-        int summand1 = Integer.MAX_VALUE;
-        int summand2 = 0;
-        assertFalse(testee.summe(summand1, summand2) == 1);
+        int value1 = Integer.MAX_VALUE;
+        int value2 = 50;
+        assertFalse(testee.summe(value1, value2) != 0);
     }
 }
