@@ -27,7 +27,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SaveCalculatorTest.summeWhereResultIsNegative">
+    <configuration name="SaveCalculatorTest.summeWhereResultIsNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SaveCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
+      <option name="METHOD_NAME" value="summeWhereResultIsNegative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SaveCalculatorTest.summeWithMaxValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SaveCalculator" />
       <extension name="coverage">
@@ -46,6 +62,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SaveCalculatorTest.summeWhereResultIsNegative" />
         <item itemvalue="JUnit.SaveCalculatorTest.summeWithMaxValue" />
       </list>
     </recent_temporary>

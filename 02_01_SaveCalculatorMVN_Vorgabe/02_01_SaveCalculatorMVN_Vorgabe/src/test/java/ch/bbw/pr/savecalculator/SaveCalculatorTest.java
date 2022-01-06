@@ -44,4 +44,12 @@ public class SaveCalculatorTest {
         int value2 = 50;
         assertFalse(testee.summe(value1, value2) != 0);
     }
+
+    @Test
+    public void summeWhereResultIsNegative() {
+        SaveCalculator testee = new SaveCalculator();
+        int value1 = -50;
+        int value2 = 30;
+        assertFalse(testee.summe(value1, value2) == 0);
+    }
 }
