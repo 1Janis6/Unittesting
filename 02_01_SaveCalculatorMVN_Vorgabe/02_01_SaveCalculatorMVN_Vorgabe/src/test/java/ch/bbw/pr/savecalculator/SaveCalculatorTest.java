@@ -30,5 +30,11 @@ public class SaveCalculatorTest {
 
     }
 
-    
+    @Test
+    public void summeWithNegativeNumbers() {
+        SaveCalculator testee = new SaveCalculator();
+        int summand1 = 0;
+        int summand2 = -1;
+        assertTrue(testee.summe(summand1, summand2) == -1);
+    }
 }
