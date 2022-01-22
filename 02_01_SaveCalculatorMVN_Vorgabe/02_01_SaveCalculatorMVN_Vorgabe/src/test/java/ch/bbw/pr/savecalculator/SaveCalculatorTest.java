@@ -73,4 +73,13 @@ public class SaveCalculatorTest {
         assertFalse(testee.summe(minus1, minus2) == 20);
 
     }
+
+    @Test
+    public void subtractionEqualsZero() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = 20;
+        int minus2 = 20;
+        assertFalse(testee.summe(minus1, minus2) == 0);
+
+    }
 }

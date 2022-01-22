@@ -31,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
   </component>
-  <component name="RunManager" selected="JUnit.SaveCalculatorTest.subtractionFalse">
+  <component name="RunManager" selected="JUnit.SaveCalculatorTest.subtractionEqualsZero">
     <configuration name="SaveCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SaveCalculator" />
       <extension name="coverage">
@@ -58,6 +58,22 @@
       <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
       <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
       <option name="METHOD_NAME" value="SummeWithMinValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaveCalculatorTest.subtractionEqualsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SaveCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
+      <option name="METHOD_NAME" value="subtractionEqualsZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,29 +111,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SaveCalculatorTest.summeWithMaxValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SaveCalculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
-      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
-      <option name="METHOD_NAME" value="summeWithMaxValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SaveCalculatorTest.subtractionEqualsZero" />
         <item itemvalue="JUnit.SaveCalculatorTest.subtractionFalse" />
         <item itemvalue="JUnit.SaveCalculatorTest" />
         <item itemvalue="JUnit.SaveCalculatorTest.SummeWithMinValue" />
         <item itemvalue="JUnit.SaveCalculatorTest.summeWhereResultIsNegative" />
-        <item itemvalue="JUnit.SaveCalculatorTest.summeWithMaxValue" />
       </list>
     </recent_temporary>
   </component>
