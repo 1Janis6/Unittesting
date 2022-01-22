@@ -36,11 +36,13 @@ public class SaveCalculator {
 		}
 		return factor1 * factor2;
 	}
-
-	//Noch un-safe Methoden, die müssen noch angepasst werden.
-
-	public double division(int value1, int value2) {
-		return value1 / value2;
+	//Division
+	public double division(int numerator, int denominator) {
+		long value = (long) numerator / (long) denominator;
+		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
+			throw new ArithmeticException();
+		}
+		return numerator / denominator;
 	}
 
 	//pow

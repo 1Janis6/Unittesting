@@ -202,6 +202,61 @@ public class SaveCalculatorTest {
         assertFalse(result == 0);
     }
 
+    // Tests für Division
+    @Test
+    public void divisionIsWorkingCorrectly() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = 10;
+        int denominator = 5;
+        assertTrue(testee.division(numerator, denominator) == 2);
 
+    }
+    @Test
+    public void divisionFalse() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = 10;
+        int denominator = 5;
+        assertFalse(testee.division(numerator, denominator) == 3);
+
+    }
+    @Test
+    public void divisionEqualsOne() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = 20;
+        int denominator = 20;
+        assertTrue(testee.division(numerator, denominator) == 1);
+    }
+    @Test (expected = ArithmeticException.class)
+    public void divisionEqualsZero() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = 10;
+        int denominator = 0;
+        assertTrue(testee.division(numerator, denominator) == 0);
+    }
+
+    @Test (expected = AssertionError.class)
+    public void divisionWithMinusMinusEqualsPlus() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = -20;
+        int denominator = -10;
+        assertTrue(testee.division(numerator, denominator) == 0.5);
+    }
+
+    @Test (expected = AssertionError.class)
+    public void divisionWithMaxValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = Integer.MAX_VALUE;
+        double denominator = 0.5;
+        double result = numerator / denominator;
+        assertEquals(0.5,result,0);
+    }
+    @Test (expected = AssertionError.class)
+    public void divisionWithMinValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = Integer.MIN_VALUE;
+        double denominator = 5;
+        double result = numerator / denominator;
+        assertEquals(0,result,0);
+    }
 
 }
