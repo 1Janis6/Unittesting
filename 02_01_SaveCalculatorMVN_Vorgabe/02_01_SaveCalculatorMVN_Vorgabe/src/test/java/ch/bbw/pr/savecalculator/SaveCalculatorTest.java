@@ -211,6 +211,13 @@ public class SaveCalculatorTest {
         assertTrue(testee.division(value1, value2) == 2);
 
     }
+    @Test
+    public void divisionFalse() {
+        SaveCalculator testee = new SaveCalculator();
+        int value1 = 10;
+        int value2 = 5;
+        assertFalse(testee.division(value1, value2) == 3);
 
+    }
 
 }
