@@ -37,12 +37,12 @@ public class SaveCalculator {
 		return factor1 * factor2;
 	}
 	//Division
-	public double division(int value1, int value2) {
-		long value = (long) value1 / (long) value2;
+	public double division(int numerator, int denominator) {
+		long value = (long) numerator / (long) denominator;
 		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
 			throw new ArithmeticException();
 		}
-		return value1 / value2;
+		return numerator / denominator;
 	}
 
 	//pow

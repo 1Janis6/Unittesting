@@ -219,5 +219,13 @@ public class SaveCalculatorTest {
         assertFalse(testee.division(value1, value2) == 3);
 
     }
+    @Test
+    public void divisionEqualsOne() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = 20;
+        int denominator = 20;
+        assertTrue(testee.division(numerator, denominator) == 1);
+
+    }
 
 }
