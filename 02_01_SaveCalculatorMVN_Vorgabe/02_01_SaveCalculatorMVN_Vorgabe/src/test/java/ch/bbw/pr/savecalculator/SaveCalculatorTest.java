@@ -110,4 +110,13 @@ public class SaveCalculatorTest {
 
     }
 
+    @Test (expected = ArithmeticException.class)
+    public void subtractionWithMinValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = Integer.MIN_VALUE;
+        int minus2 = 1;
+        assertTrue(testee.subtraction(minus1, minus2) != 0);
+
+    }
+
 }
