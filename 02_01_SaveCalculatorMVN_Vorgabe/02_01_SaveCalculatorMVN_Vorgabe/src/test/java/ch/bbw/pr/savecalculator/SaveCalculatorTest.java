@@ -149,6 +149,20 @@ public class SaveCalculatorTest {
         assertTrue(result == 0);
 
     }
+    @Test
+    public void multiplicationWithNegativeNumbers() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
+        SaveCalculator SaveCalculator = new SaveCalculator();
+        Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
+        method.setAccessible(true);
+
+        int factor1 = -10;
+        int factor2 = 10;
+
+        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        assertTrue(result == -100);
+
+    }
+
 
 
 }
