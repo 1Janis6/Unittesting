@@ -250,5 +250,13 @@ public class SaveCalculatorTest {
         double result = numerator / denominator;
         assertEquals(0.5,result,0);
     }
+    @Test (expected = AssertionError.class)
+    public void divisionWithMinValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = Integer.MIN_VALUE;
+        double denominator = 5;
+        double result = numerator / denominator;
+        assertEquals(0,result,0);
+    }
 
 }
