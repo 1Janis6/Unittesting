@@ -100,4 +100,14 @@ public class SaveCalculatorTest {
         assertTrue(testee.subtraction(minus1, minus2) == 40);
 
     }
+
+    @Test (expected = ArithmeticException.class)
+    public void subtractionWithMaxValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = Integer.MAX_VALUE;
+        int minus2 = -1;
+        assertTrue(testee.subtraction(minus1, minus2) != 0);
+
+    }
+
 }
