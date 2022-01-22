@@ -176,6 +176,20 @@ public class SaveCalculatorTest {
 
     }
 
+    @Test (expected = InvocationTargetException.class)
+    public void multiplicationWithMaxValue() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
+        SaveCalculator SaveCalculator = new SaveCalculator();
+        Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
+        method.setAccessible(true);
+
+        int factor1 = Integer.MAX_VALUE;
+        int factor2 = 20;
+
+        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        assertFalse(result != 0);
+
+    }
+
 
 
 }
