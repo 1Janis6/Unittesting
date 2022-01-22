@@ -242,4 +242,13 @@ public class SaveCalculatorTest {
         assertTrue(testee.division(numerator, denominator) == 0.5);
     }
 
+    @Test (expected = AssertionError.class)
+    public void divisionWithMaxValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = Integer.MAX_VALUE;
+        double denominator = 0.5;
+        double result = numerator / denominator;
+        assertEquals(0.5,result,0);
+    }
+
 }
