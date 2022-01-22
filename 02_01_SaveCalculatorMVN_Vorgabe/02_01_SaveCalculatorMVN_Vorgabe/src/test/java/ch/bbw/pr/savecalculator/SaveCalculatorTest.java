@@ -206,17 +206,17 @@ public class SaveCalculatorTest {
     @Test
     public void divisionIsWorkingCorrectly() {
         SaveCalculator testee = new SaveCalculator();
-        int value1 = 10;
-        int value2 = 5;
-        assertTrue(testee.division(value1, value2) == 2);
+        int numerator = 10;
+        int denominator = 5;
+        assertTrue(testee.division(numerator, denominator) == 2);
 
     }
     @Test
     public void divisionFalse() {
         SaveCalculator testee = new SaveCalculator();
-        int value1 = 10;
-        int value2 = 5;
-        assertFalse(testee.division(value1, value2) == 3);
+        int numerator = 10;
+        int denominator = 5;
+        assertFalse(testee.division(numerator, denominator) == 3);
 
     }
     @Test
