@@ -1,11 +1,14 @@
 package ch.bbw.pr.savecalculator;
 import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+import static org.junit.Assert.*;
 
 
 public class SaveCalculatorTest {
+
 
     @Test
     public void shouldAnswerTrue(){
@@ -118,5 +121,20 @@ public class SaveCalculatorTest {
         assertTrue(testee.subtraction(minus1, minus2) != 0);
 
     }
+    // Tests für Multipliktion
+    @Test
+    public void multiplicationFalse() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
+        SaveCalculator SaveCalculator = new SaveCalculator();
+        Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
+        method.setAccessible(true);
+
+        int factor1 = 30;
+        int factor2 = 10;
+
+        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        assertFalse(result == 400);
+
+    }
+
 
 }
