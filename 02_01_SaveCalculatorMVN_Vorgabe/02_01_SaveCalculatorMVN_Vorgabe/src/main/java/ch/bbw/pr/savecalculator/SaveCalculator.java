@@ -28,14 +28,21 @@ public class SaveCalculator {
 		return minus1 - minus2;
 	}
 
+	//Multiplikation
+	private double multiplication(Integer factor1, Integer factor2) {
+		long value = (long) factor1 * (long) factor2;
+		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
+			throw new ArithmeticException();
+		}
+		return factor1 * factor2;
+	}
+
 	//Noch un-safe Methoden, die müssen noch angepasst werden.
 
 	public double division(int value1, int value2) {
 		return value1 / value2;
 	}
-	private double multiplication(Integer value1, Integer value2) {
-		return value1 * value2;
-	}
+
 	//pow
 	//sqrt
 	//...
