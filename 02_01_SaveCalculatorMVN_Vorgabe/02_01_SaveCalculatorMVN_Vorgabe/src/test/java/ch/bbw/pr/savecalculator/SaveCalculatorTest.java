@@ -70,7 +70,7 @@ public class SaveCalculatorTest {
         SaveCalculator testee = new SaveCalculator();
         int minus1 = 40;
         int minus2 = 30;
-        assertFalse(testee.summe(minus1, minus2) == 20);
+        assertFalse(testee.subtraction(minus1, minus2) == 20);
 
     }
 
@@ -79,7 +79,16 @@ public class SaveCalculatorTest {
         SaveCalculator testee = new SaveCalculator();
         int minus1 = 20;
         int minus2 = 20;
-        assertFalse(testee.summe(minus1, minus2) == 0);
+        assertTrue(testee.subtraction(minus1, minus2) == 0);
+
+    }
+
+    @Test
+    public void subtractionWithNegativeNumbers() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = 0;
+        int minus2 = 10;
+        assertTrue(testee.subtraction(minus1, minus2) == -10);
 
     }
 }

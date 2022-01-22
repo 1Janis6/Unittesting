@@ -19,7 +19,7 @@ public class SaveCalculator {
 		return summand1 + summand2;
 	}
 //Subtraktion
-	public int subtraktion(int minus1, int minus2) throws ArithmeticException
+	public int subtraction(int minus1, int minus2) throws ArithmeticException
 	{
 		long value = (long) minus1 - (long) minus2;
 		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
