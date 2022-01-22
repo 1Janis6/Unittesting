@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b74a311a-7333-4256-959d-9deb4ca43571" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/src/test/java/ch/bbw/pr/savecalculator/SaveCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/src/test/java/ch/bbw/pr/savecalculator/SaveCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/target/test-classes/ch/bbw/pr/savecalculator/SaveCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/target/test-classes/ch/bbw/pr/savecalculator/SaveCalculatorTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="23KWIG1Av1o5ihXA9VppOdSG9zz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
+  </component>
+  <component name="RunManager" selected="JUnit.SaveCalculatorTest.divisionWithMinValue">
+    <configuration name="SaveCalculatorTest.divisionEqualsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SaveCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
+      <option name="METHOD_NAME" value="divisionEqualsZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaveCalculatorTest.divisionWithMaxValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SaveCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
+      <option name="METHOD_NAME" value="divisionWithMaxValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaveCalculatorTest.divisionWithMinValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SaveCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
+      <option name="METHOD_NAME" value="divisionWithMinValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaveCalculatorTest.divisionWithMinusMinusEqualsPlus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SaveCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
+      <option name="METHOD_NAME" value="divisionWithMinusMinusEqualsPlus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaveCalculatorTest.divisionWithNegativeNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SaveCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
+      <option name="METHOD_NAME" value="divisionWithNegativeNumbers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Unittesting" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Unittesting" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SaveCalculatorTest.divisionWithMinValue" />
+        <item itemvalue="JUnit.SaveCalculatorTest.divisionWithMaxValue" />
+        <item itemvalue="JUnit.SaveCalculatorTest.divisionWithMinusMinusEqualsPlus" />
+        <item itemvalue="JUnit.SaveCalculatorTest.divisionWithNegativeNumbers" />
+        <item itemvalue="JUnit.SaveCalculatorTest.divisionEqualsZero" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b74a311a-7333-4256-959d-9deb4ca43571" name="Changes" comment="" />
+      <created>1641483179244</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641483179244</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature/TestingWithSumme" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
