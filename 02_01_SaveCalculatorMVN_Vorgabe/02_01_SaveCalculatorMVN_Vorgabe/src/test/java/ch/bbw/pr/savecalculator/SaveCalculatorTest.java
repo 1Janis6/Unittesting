@@ -202,6 +202,15 @@ public class SaveCalculatorTest {
         assertFalse(result == 0);
     }
 
+    // Tests für Division
+    @Test
+    public void divisionIsWorkingCorrectly() {
+        SaveCalculator testee = new SaveCalculator();
+        int value1 = 10;
+        int value2 = 5;
+        assertTrue(testee.division(value1, value2) == 2);
+
+    }
 
 
 }

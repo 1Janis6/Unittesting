@@ -36,10 +36,12 @@ public class SaveCalculator {
 		}
 		return factor1 * factor2;
 	}
-
-	//Noch un-safe Methoden, die müssen noch angepasst werden.
-
+	//Division
 	public double division(int value1, int value2) {
+		long value = (long) value1 / (long) value2;
+		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
+			throw new ArithmeticException();
+		}
 		return value1 / value2;
 	}
 

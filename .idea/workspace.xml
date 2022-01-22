@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b74a311a-7333-4256-959d-9deb4ca43571" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/src/main/java/ch/bbw/pr/savecalculator/SaveCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/src/main/java/ch/bbw/pr/savecalculator/SaveCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/src/test/java/ch/bbw/pr/savecalculator/SaveCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/src/test/java/ch/bbw/pr/savecalculator/SaveCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/target/classes/ch/bbw/pr/savecalculator/SaveCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/target/classes/ch/bbw/pr/savecalculator/SaveCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/target/test-classes/ch/bbw/pr/savecalculator/SaveCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/target/test-classes/ch/bbw/pr/savecalculator/SaveCalculatorTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +34,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
   </component>
-  <component name="RunManager" selected="JUnit.SaveCalculatorTest.multiplicationWithMinValue">
-    <configuration name="SaveCalculatorTest.multiplicationEqualsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SaveCalculatorTest.divisionIsWorkingCorrectly">
+    <configuration name="SaveCalculatorTest.divisionFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SaveCalculator" />
       <extension name="coverage">
         <pattern>
@@ -43,7 +45,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
       <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
-      <option name="METHOD_NAME" value="multiplicationEqualsZero" />
+      <option name="METHOD_NAME" value="divisionFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaveCalculatorTest.divisionIsWorkingCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SaveCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
+      <option name="METHOD_NAME" value="divisionIsWorkingCorrectly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,29 +115,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SaveCalculatorTest.multiplicationWithNegativeNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SaveCalculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
-      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
-      <option name="METHOD_NAME" value="multiplicationWithNegativeNumbers" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Unittesting" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Unittesting" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SaveCalculatorTest.divisionIsWorkingCorrectly" />
+        <item itemvalue="JUnit.SaveCalculatorTest.divisionFalse" />
         <item itemvalue="JUnit.SaveCalculatorTest.multiplicationWithMinValue" />
         <item itemvalue="JUnit.SaveCalculatorTest.multiplicationWithMaxValue" />
         <item itemvalue="JUnit.SaveCalculatorTest.multiplicationWithMinusMinusEqualsPlus" />
-        <item itemvalue="JUnit.SaveCalculatorTest.multiplicationWithNegativeNumbers" />
-        <item itemvalue="JUnit.SaveCalculatorTest.multiplicationEqualsZero" />
       </list>
     </recent_temporary>
   </component>
