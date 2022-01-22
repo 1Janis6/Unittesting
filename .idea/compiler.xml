@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SaveCalculator" />
+        <module name="Unittesting" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SaveCalculator" target="13" />
+      <module name="Unittesting" target="13" />
     </bytecodeTargetLevel>
   </component>
 </project>

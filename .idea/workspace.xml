@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b74a311a-7333-4256-959d-9deb4ca43571" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Unittesting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Unittesting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/SaveCalculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/src/main/java/ch/bbw/pr/savecalculator/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/src/main/java/ch/bbw/pr/savecalculator/SaveCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/src/test/java/ch/bbw/pr/savecalculator/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/src/test/java/ch/bbw/pr/savecalculator/SaveCalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/target/classes/ch/bbw/pr/savecalculator/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/target/classes/ch/bbw/pr/savecalculator/SaveCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/target/test-classes/ch/bbw/pr/savecalculator/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_01_SaveCalculatorMVN_Vorgabe/02_01_SaveCalculatorMVN_Vorgabe/target/test-classes/ch/bbw/pr/savecalculator/SaveCalculatorTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +42,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.SaveCalculatorTest">
-    <configuration name="SaveCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SaveCalculator" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Coding\Java\Unittesting\02_01_SaveCalculatorMVN_Vorgabe\src\test\java\ch\bbw\pr\savecalculator" />
+      <recent name="C:\Coding\Java\Unittesting\02_01_SaveCalculatorMVN_Vorgabe\src\main\java\ch\bbw\pr\savecalculator" />
+      <recent name="C:\Coding\Java\Unittesting" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SaveCalculatorTest (1)">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.App" />
+      <module name="Unittesting" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaveCalculatorTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Unittesting" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
@@ -47,18 +77,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SaveCalculatorTest.divisionWithMaxValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaveCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SaveCalculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
       <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
-      <option name="METHOD_NAME" value="divisionWithMaxValue" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,8 +102,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SaveCalculatorTest.divisionWithMinusMinusEqualsPlus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SaveCalculator" />
+    <configuration name="SaveCalculatorTest.shouldAnswerTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Unittesting" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
@@ -89,23 +112,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
       <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
-      <option name="METHOD_NAME" value="divisionWithMinusMinusEqualsPlus" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SaveCalculatorTest.divisionWithNegativeNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SaveCalculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
-      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
-      <option name="METHOD_NAME" value="divisionWithNegativeNumbers" />
+      <option name="METHOD_NAME" value="shouldAnswerTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SaveCalculatorTest (1)" />
+        <item itemvalue="JUnit.SaveCalculatorTest.shouldAnswerTrue" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.SaveCalculatorTest" />
         <item itemvalue="JUnit.SaveCalculatorTest.divisionWithMinValue" />
-        <item itemvalue="JUnit.SaveCalculatorTest.divisionWithMaxValue" />
-        <item itemvalue="JUnit.SaveCalculatorTest.divisionWithMinusMinusEqualsPlus" />
-        <item itemvalue="JUnit.SaveCalculatorTest.divisionWithNegativeNumbers" />
       </list>
     </recent_temporary>
   </component>
