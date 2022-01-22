@@ -7,13 +7,13 @@ import static org.junit.Assert.assertTrue;
 
 public class SaveCalculatorTest {
 
-
     @Test
     public void shouldAnswerTrue(){
         assertTrue(true);
 
     }
 
+//    Tests Für Summe
     @Test
     public void summeFalse() {
         SaveCalculator testee = new SaveCalculator();
@@ -22,13 +22,13 @@ public class SaveCalculatorTest {
         assertFalse(testee.summe(summand1, summand2) == 40);
 
     }
+
     @Test
     public void summeEqualsZero() {
         SaveCalculator testee = new SaveCalculator();
         int summand1 = 0;
         int summand2 = 0;
         assertTrue(testee.summe(summand1, summand2) == 0);
-
     }
 
     @Test
@@ -38,6 +38,7 @@ public class SaveCalculatorTest {
         int summand2 = -1;
         assertTrue(testee.summe(summand1, summand2) == -1);
     }
+
     @Test (expected = ArithmeticException.class)
     public void summeWithMaxValue() {
         SaveCalculator testee = new SaveCalculator();
@@ -45,6 +46,7 @@ public class SaveCalculatorTest {
         int value2 = 50;
         assertFalse(testee.summe(value1, value2) != 0);
     }
+
     @Test
     public void summeWhereResultIsNegative() {
         SaveCalculator testee = new SaveCalculator();
@@ -52,12 +54,69 @@ public class SaveCalculatorTest {
         int value2 = 30;
         assertFalse(testee.summe(value1, value2) == 0);
     }
+
     @Test (expected = ArithmeticException.class)
     public void SummeWithMinValue() {
         SaveCalculator testee = new SaveCalculator();
         int value1 = Integer.MIN_VALUE;
         int value2 = -30;
         assertFalse(testee.summe(value1, value2) == 0);
+    }
+
+    // Tests für Subtraktion
+
+    @Test
+    public void subtractionFalse() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = 40;
+        int minus2 = 30;
+        assertFalse(testee.subtraction(minus1, minus2) == 20);
+
+    }
+
+    @Test
+    public void subtractionEqualsZero() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = 20;
+        int minus2 = 20;
+        assertTrue(testee.subtraction(minus1, minus2) == 0);
+
+    }
+
+    @Test
+    public void subtractionWithNegativeNumbers() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = 0;
+        int minus2 = 10;
+        assertTrue(testee.subtraction(minus1, minus2) == -10);
+
+    }
+
+    @Test
+    public void subtractionWithMinusMinusEqualsPlus() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = 20;
+        int minus2 = -20;
+        assertTrue(testee.subtraction(minus1, minus2) == 40);
+
+    }
+
+    @Test (expected = ArithmeticException.class)
+    public void subtractionWithMaxValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = Integer.MAX_VALUE;
+        int minus2 = -1;
+        assertTrue(testee.subtraction(minus1, minus2) != 0);
+
+    }
+
+    @Test (expected = ArithmeticException.class)
+    public void subtractionWithMinValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = Integer.MIN_VALUE;
+        int minus2 = 1;
+        assertTrue(testee.subtraction(minus1, minus2) != 0);
+
     }
 
 }
