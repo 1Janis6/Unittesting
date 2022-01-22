@@ -63,7 +63,14 @@ public class SaveCalculatorTest {
         assertFalse(testee.summe(value1, value2) == 0);
     }
 
+    // Tests für Subtraktion
+
     @Test
-    public void name() {
+    public void subtractionFalse() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = 40;
+        int minus2 = 30;
+        assertFalse(testee.summe(minus1, minus2) == 20);
+
     }
 }
