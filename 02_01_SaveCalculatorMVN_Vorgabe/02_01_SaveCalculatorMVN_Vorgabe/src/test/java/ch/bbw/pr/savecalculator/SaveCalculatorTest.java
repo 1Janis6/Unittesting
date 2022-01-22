@@ -225,7 +225,13 @@ public class SaveCalculatorTest {
         int numerator = 20;
         int denominator = 20;
         assertTrue(testee.division(numerator, denominator) == 1);
-
+    }
+    @Test (expected = ArithmeticException.class)
+    public void divisionEqualsZero() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = 10;
+        int denominator = 0;
+        assertTrue(testee.division(numerator, denominator) == 0);
     }
 
 }
