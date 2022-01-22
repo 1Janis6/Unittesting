@@ -7,6 +7,7 @@ import static org.junit.Assert.assertTrue;
 
 public class SaveCalculatorTest {
 
+
     @Test
     public void shouldAnswerTrue(){
         assertTrue(true);
@@ -58,4 +59,5 @@ public class SaveCalculatorTest {
         int value2 = -30;
         assertFalse(testee.summe(value1, value2) == 0);
     }
+
 }
