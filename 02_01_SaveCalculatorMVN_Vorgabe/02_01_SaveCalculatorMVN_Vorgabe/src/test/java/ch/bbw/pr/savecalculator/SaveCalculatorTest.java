@@ -234,4 +234,12 @@ public class SaveCalculatorTest {
         assertTrue(testee.division(numerator, denominator) == 0);
     }
 
+    @Test (expected = AssertionError.class)
+    public void divisionWithMinusMinusEqualsPlus() {
+        SaveCalculator testee = new SaveCalculator();
+        int numerator = -20;
+        int denominator = -10;
+        assertTrue(testee.division(numerator, denominator) == 0.5);
+    }
+
 }
