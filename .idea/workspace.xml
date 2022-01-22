@@ -32,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
   </component>
-  <component name="RunManager" selected="JUnit.SaveCalculatorTest.multiplicationWithNegativeNumbers">
+  <component name="RunManager" selected="JUnit.SaveCalculatorTest.multiplicationWithMinusMinusEqualsPlus">
     <configuration name="SaveCalculatorTest.multiplicationEqualsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SaveCalculator" />
       <extension name="coverage">
@@ -65,6 +65,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SaveCalculatorTest.multiplicationWithMinusMinusEqualsPlus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SaveCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
+      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
+      <option name="METHOD_NAME" value="multiplicationWithMinusMinusEqualsPlus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SaveCalculatorTest.multiplicationWithNegativeNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SaveCalculator" />
       <extension name="coverage">
@@ -76,22 +92,6 @@
       <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
       <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
       <option name="METHOD_NAME" value="multiplicationWithNegativeNumbers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SaveCalculatorTest.subtractionWithMaxValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SaveCalculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ch.bbw.pr.savecalculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ch.bbw.pr.savecalculator" />
-      <option name="MAIN_CLASS_NAME" value="ch.bbw.pr.savecalculator.SaveCalculatorTest" />
-      <option name="METHOD_NAME" value="subtractionWithMaxValue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SaveCalculatorTest.multiplicationWithMinusMinusEqualsPlus" />
         <item itemvalue="JUnit.SaveCalculatorTest.multiplicationWithNegativeNumbers" />
         <item itemvalue="JUnit.SaveCalculatorTest.multiplicationEqualsZero" />
         <item itemvalue="JUnit.SaveCalculatorTest.multiplicationFalse" />
         <item itemvalue="JUnit.SaveCalculatorTest.subtractionWithMinValue" />
-        <item itemvalue="JUnit.SaveCalculatorTest.subtractionWithMaxValue" />
       </list>
     </recent_temporary>
   </component>
