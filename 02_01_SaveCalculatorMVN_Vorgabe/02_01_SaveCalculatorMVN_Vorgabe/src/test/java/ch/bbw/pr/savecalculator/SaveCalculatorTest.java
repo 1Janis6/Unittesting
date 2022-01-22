@@ -91,4 +91,13 @@ public class SaveCalculatorTest {
         assertTrue(testee.subtraction(minus1, minus2) == -10);
 
     }
+
+    @Test
+    public void subtractionWithMinusMinusEqualsPlus() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = 20;
+        int minus2 = -20;
+        assertTrue(testee.subtraction(minus1, minus2) == 40);
+
+    }
 }
