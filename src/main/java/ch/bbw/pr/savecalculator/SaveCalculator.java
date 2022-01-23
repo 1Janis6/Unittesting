@@ -44,6 +44,16 @@ public class SaveCalculator {
 		}
 		return numerator / denominator;
 	}
+	//Power
+	public int power(int powerValue) throws ArithmeticException
+	{
+		long value = (long) powerValue * (long) powerValue;
+		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
+			throw new ArithmeticException();
+		}
+		return powerValue * powerValue;
+	}
+
 
 	//pow
 	//sqrt
