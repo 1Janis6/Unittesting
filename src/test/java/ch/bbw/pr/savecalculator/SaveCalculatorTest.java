@@ -94,6 +94,15 @@ public class SaveCalculatorTest {
     }
 
     @Test
+    public void subtractionIsWorkingCorrectly() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = 40;
+        int minus2 = 30;
+        assertTrue(testee.subtraction(minus1, minus2) == 10);
+
+    }
+
+    @Test
     public void subtractionEqualsZero() {
         SaveCalculator testee = new SaveCalculator();
         int minus1 = 20;
