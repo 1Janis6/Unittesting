@@ -286,4 +286,11 @@ public class SaveCalculatorTest {
         assertTrue(testee.power(powerValue) != 0);
     }
 
+    @Test (expected = ArithmeticException.class)
+    public void powerWithMinValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int powerValue = Integer.MIN_VALUE;
+        assertTrue(testee.power(powerValue) != 0);
+    }
+
 }
