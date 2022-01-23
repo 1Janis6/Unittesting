@@ -128,6 +128,14 @@ public class SaveCalculatorTest {
         assertTrue(testee.subtraction(minus1, minus2) == 40);
 
     }
+    @Test
+    public void subtractionWithTwoNegativeNumbers() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = -20;
+        int minus2 = -20;
+        assertTrue(testee.subtraction(minus1, minus2) == 0);
+
+    }
 
     @Test (expected = ArithmeticException.class)
     public void subtractionWithMaxValue() {
