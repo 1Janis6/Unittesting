@@ -272,5 +272,12 @@ public class SaveCalculatorTest {
         assertEquals(0,testee.power(powerValue), 0);
     }
 
+    @Test
+    public void powerWithNegativeNumber() {
+        SaveCalculator testee = new SaveCalculator();
+        int powerValue = -5;
+        assertEquals(25,testee.power(powerValue), 0);
+    }
+
 
 }
