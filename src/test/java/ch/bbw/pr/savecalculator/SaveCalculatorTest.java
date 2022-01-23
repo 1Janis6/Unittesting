@@ -279,5 +279,11 @@ public class SaveCalculatorTest {
         assertEquals(25,testee.power(powerValue), 0);
     }
 
+    @Test (expected = ArithmeticException.class)
+    public void powerWithMaxValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int powerValue = Integer.MAX_VALUE;
+        assertTrue(testee.power(powerValue) != 0);
+    }
 
 }
