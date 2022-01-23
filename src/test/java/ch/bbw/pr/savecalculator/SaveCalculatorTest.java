@@ -33,6 +33,14 @@ public class SaveCalculatorTest {
         assertTrue(testee.summe(summand1, summand2) == 50);
 
     }
+    @Test
+    public void summeWithTwoNegativeNumbers() {
+        SaveCalculator testee = new SaveCalculator();
+        int summand1 = -20;
+        int summand2 = -40;
+        assertTrue(testee.summe(summand1, summand2) == -60);
+
+    }
 
     @Test
     public void summeEqualsZero() {
