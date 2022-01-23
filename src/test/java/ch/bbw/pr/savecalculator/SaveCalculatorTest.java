@@ -254,9 +254,43 @@ public class SaveCalculatorTest {
     public void divisionWithMinValue() {
         SaveCalculator testee = new SaveCalculator();
         int numerator = Integer.MIN_VALUE;
-        double denominator = 5;
-        double result = numerator / denominator;
-        assertEquals(0,result,0);
+        int denominator = 5;
+        assertEquals(0,testee.division(numerator, denominator),0);
+    }
+    //Power
+    @Test
+    public void powerIsWorkingCorrectly() {
+        SaveCalculator testee = new SaveCalculator();
+        int powerValue = 5;
+        assertEquals(25,testee.power(powerValue), 0);
+    }
+
+    @Test
+    public void powerWithZero() {
+        SaveCalculator testee = new SaveCalculator();
+        int powerValue = 0;
+        assertEquals(0,testee.power(powerValue), 0);
+    }
+
+    @Test
+    public void powerWithNegativeNumber() {
+        SaveCalculator testee = new SaveCalculator();
+        int powerValue = -5;
+        assertEquals(25,testee.power(powerValue), 0);
+    }
+
+    @Test (expected = ArithmeticException.class)
+    public void powerWithMaxValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int powerValue = Integer.MAX_VALUE;
+        assertTrue(testee.power(powerValue) != 0);
+    }
+
+    @Test (expected = ArithmeticException.class)
+    public void powerWithMinValue() {
+        SaveCalculator testee = new SaveCalculator();
+        int powerValue = Integer.MIN_VALUE;
+        assertTrue(testee.power(powerValue) != 0);
     }
 
 }
