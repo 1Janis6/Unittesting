@@ -44,6 +44,15 @@ public class SaveCalculator {
 		}
 		return numerator / denominator;
 	}
+	//SquareRoot
+	public int squareRoot(int square) throws ArithmeticException
+	{
+		long value = (long) square / (long) square;
+		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
+			throw new ArithmeticException();
+		}
+		return square / square;
+	}
 
 	//pow
 	//sqrt
