@@ -25,6 +25,22 @@ public class SaveCalculatorTest {
         assertFalse(testee.summe(summand1, summand2) == 40);
 
     }
+    @Test
+    public void summeIsWorkingCorrectly() {
+        SaveCalculator testee = new SaveCalculator();
+        int summand1 = 20;
+        int summand2 = 30;
+        assertTrue(testee.summe(summand1, summand2) == 50);
+
+    }
+    @Test
+    public void summeWithTwoNegativeNumbers() {
+        SaveCalculator testee = new SaveCalculator();
+        int summand1 = -20;
+        int summand2 = -40;
+        assertTrue(testee.summe(summand1, summand2) == -60);
+
+    }
 
     @Test
     public void summeEqualsZero() {
@@ -78,6 +94,15 @@ public class SaveCalculatorTest {
     }
 
     @Test
+    public void subtractionIsWorkingCorrectly() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = 40;
+        int minus2 = 30;
+        assertTrue(testee.subtraction(minus1, minus2) == 10);
+
+    }
+
+    @Test
     public void subtractionEqualsZero() {
         SaveCalculator testee = new SaveCalculator();
         int minus1 = 20;
@@ -101,6 +126,14 @@ public class SaveCalculatorTest {
         int minus1 = 20;
         int minus2 = -20;
         assertTrue(testee.subtraction(minus1, minus2) == 40);
+
+    }
+    @Test
+    public void subtractionWithTwoNegativeNumbers() {
+        SaveCalculator testee = new SaveCalculator();
+        int minus1 = -20;
+        int minus2 = -20;
+        assertTrue(testee.subtraction(minus1, minus2) == 0);
 
     }
 
@@ -134,6 +167,32 @@ public class SaveCalculatorTest {
         double result = (double) method.invoke(SaveCalculator, factor1, factor2);
         assertFalse(result == 400);
 
+    }
+    @Test
+    public void multiplicationIsWorkingCorrectly() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
+        SaveCalculator SaveCalculator = new SaveCalculator();
+        Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
+        method.setAccessible(true);
+
+        int factor1 = 5;
+        int factor2 = 5;
+
+        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        assertTrue(result == 25);
+
+    }
+
+    @Test
+    public void multiplicationWithTwoNegativeNumbers() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
+        SaveCalculator SaveCalculator = new SaveCalculator();
+        Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
+        method.setAccessible(true);
+
+        int factor1 = -5;
+        int factor2 = -5;
+
+        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        assertTrue(result == 25);
     }
 
     @Test
