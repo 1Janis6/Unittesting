@@ -25,6 +25,14 @@ public class SaveCalculatorTest {
         assertFalse(testee.summe(summand1, summand2) == 40);
 
     }
+    @Test
+    public void summeIsWorkingCorrectly() {
+        SaveCalculator testee = new SaveCalculator();
+        int summand1 = 20;
+        int summand2 = 30;
+        assertTrue(testee.summe(summand1, summand2) == 50);
+
+    }
 
     @Test
     public void summeEqualsZero() {
