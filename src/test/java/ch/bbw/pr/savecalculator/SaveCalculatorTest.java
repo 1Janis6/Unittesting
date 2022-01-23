@@ -168,6 +168,19 @@ public class SaveCalculatorTest {
         assertFalse(result == 400);
 
     }
+    @Test
+    public void multiplicationIsWorkingCorrectly() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
+        SaveCalculator SaveCalculator = new SaveCalculator();
+        Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
+        method.setAccessible(true);
+
+        int factor1 = 5;
+        int factor2 = 5;
+
+        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        assertTrue(result == 25);
+
+    }
 
     @Test
     public void multiplicationEqualsZero() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
