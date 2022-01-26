@@ -1,12 +1,9 @@
 package ch.bbw.pr.savecalculator;
 
 /**
- * SaveCalculator
- * Rechnet 'vorsichtig' mit Zahlen.
- * Warnt, wenn etwas nicht geht.
- *   
- * @author Peter Rutschmann
- * @version 0.0.1
+ * Application
+ * @autor Janis Ringli
+ * @version 1.18.1
  */
 // Addition
 public class SaveCalculator {
@@ -18,7 +15,7 @@ public class SaveCalculator {
 		}
 		return summand1 + summand2;
 	}
-//Subtraktion
+	//Subtraktion
 	public int subtraction(int minus1, int minus2) throws ArithmeticException
 	{
 		long value = (long) minus1 - (long) minus2;
