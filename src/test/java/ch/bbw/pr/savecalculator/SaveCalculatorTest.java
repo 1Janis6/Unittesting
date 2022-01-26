@@ -129,104 +129,96 @@ public class SaveCalculatorTest {
     // Tests für Multipliktion
     @Test
     public void multiplicationIsWorkingCorrectly() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
-        SaveCalculator SaveCalculator = new SaveCalculator();
         Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
         method.setAccessible(true);
 
         int factor1 = 5;
         int factor2 = 5;
 
-        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        double result = (double) method.invoke(testee, factor1, factor2);
         assertTrue(result == 25);
 
     }
 
     @Test
     public void multiplicationWithTwoNegativeNumbers() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
-        SaveCalculator SaveCalculator = new SaveCalculator();
         Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
         method.setAccessible(true);
 
         int factor1 = -5;
         int factor2 = -5;
 
-        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        double result = (double) method.invoke(testee, factor1, factor2);
         assertTrue(result == 25);
     }
 
     @Test
     public void multiplicationWithZeroAndPositiveNumber() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
-        SaveCalculator SaveCalculator = new SaveCalculator();
         Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
         method.setAccessible(true);
 
         int factor1 = 0;
         int factor2 = 10;
 
-        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        double result = (double) method.invoke(testee, factor1, factor2);
         assertTrue(result == 0);
 
     }
     @Test
     public void multiplicationWithPositiveAndNegativeNumbers() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
-        SaveCalculator SaveCalculator = new SaveCalculator();
         Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
         method.setAccessible(true);
 
         int factor1 = 10;
         int factor2 = -10;
 
-        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        double result = (double) method.invoke(testee, factor1, factor2);
         assertTrue(result == -100);
 
     }
     @Test (expected = InvocationTargetException.class)
     public void multiplicationWithMaxValue() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
-        SaveCalculator SaveCalculator = new SaveCalculator();
         Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
         method.setAccessible(true);
 
         int factor1 = Integer.MAX_VALUE;
         int factor2 = 20;
 
-        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        double result = (double) method.invoke(testee, factor1, factor2);
         assertFalse(result != 0);
     }
 
     @Test (expected = InvocationTargetException.class)
     public void multiplicationWithMinValue() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
-        SaveCalculator SaveCalculator = new SaveCalculator();
         Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
         method.setAccessible(true);
 
         int factor1 = Integer.MIN_VALUE;
         int factor2 = -20;
 
-        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        double result = (double) method.invoke(testee, factor1, factor2);
         assertFalse(result == 0);
     }
     @Test (expected = InvocationTargetException.class)
     public void multiplicationWithMaxValueAndMinValue() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
-        SaveCalculator SaveCalculator = new SaveCalculator();
         Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
         method.setAccessible(true);
 
         int factor1 = Integer.MAX_VALUE;
         int factor2 = Integer.MIN_VALUE;
 
-        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        double result = (double) method.invoke(testee, factor1, factor2);
         assertTrue(result != 0);
     }
     @Test
     public void multiplicationWithTwoZeros() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
-        SaveCalculator SaveCalculator = new SaveCalculator();
         Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
         method.setAccessible(true);
 
         int factor1 = 0;
         int factor2 = -0;
 
-        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        double result = (double) method.invoke(testee, factor1, factor2);
         assertTrue(result == 0);
     }
 
