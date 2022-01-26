@@ -3,7 +3,7 @@ package ch.bbw.pr.savecalculator;
 /**
  * Application
  * @autor Janis Ringli
- * @version 1.0.0
+ * @version 1.18.1
  */
 public class App 
 {

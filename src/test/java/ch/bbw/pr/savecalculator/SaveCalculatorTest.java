@@ -25,72 +25,56 @@ public class SaveCalculatorTest {
 
     //Tests Für Summe
     @Test
-    public void summeFalse() {
-        int summand1 = 20;
-        int summand2 = 30;
-        assertFalse(testee.summe(summand1, summand2) == 40);
-
-    }
-    @Test
     public void summeIsWorkingCorrectly() {
         int summand1 = 20;
         int summand2 = 30;
         assertTrue(testee.summe(summand1, summand2) == 50);
-
     }
     @Test
-    public void summeWithTwoNegativeNumbers() {
+    public void summeWithNegativeAndPositiveNumbers() {
+        int summand1 = 20;
+        int summand2 = -40;
+        assertTrue(testee.summe(summand1, summand2) == -20);
+    }
+    @Test
+    public void summeWithNegativeNumbers() {
         int summand1 = -20;
         int summand2 = -40;
         assertTrue(testee.summe(summand1, summand2) == -60);
-
     }
-
     @Test
-    public void summeEqualsZero() {
+    public void summeWithZeroAndPositive() {
+        int summand1 = 0;
+        int summand2 = 10;
+        assertTrue(testee.summe(summand1, summand2) == 10);
+    }
+    @Test (expected = ArithmeticException.class)
+    public void summeWithMaxValue() {
+        int value1 = Integer.MAX_VALUE;
+        int value2 = 50;
+        assertTrue(testee.summe(value1, value2) != 0);
+    }
+    @Test (expected = AssertionError.class)
+    public void SummeWithMinValue() {
+        int value1 = Integer.MIN_VALUE;
+        int value2 = 30;
+        assertTrue(testee.summe(value1, value2) != 0);
+    }
+    @Test (expected = ArithmeticException.class)
+    public void SummeWithMinValueAndMaxValue() {
+        int value1 = Integer.MIN_VALUE;
+        int value2 = Integer.MIN_VALUE;
+        assertTrue(testee.summe(value1, value2) == 0);
+    }
+    @Test
+    public void summeWithZeros() {
         int summand1 = 0;
         int summand2 = 0;
         assertTrue(testee.summe(summand1, summand2) == 0);
     }
 
-    @Test
-    public void summeWithNegativeNumbers() {
-        int summand1 = 0;
-        int summand2 = -1;
-        assertTrue(testee.summe(summand1, summand2) == -1);
-    }
-
-    @Test (expected = ArithmeticException.class)
-    public void summeWithMaxValue() {
-        int value1 = Integer.MAX_VALUE;
-        int value2 = 50;
-        assertFalse(testee.summe(value1, value2) != 0);
-    }
-
-    @Test
-    public void summeWhereResultIsNegative() {
-        int value1 = -50;
-        int value2 = 30;
-        assertFalse(testee.summe(value1, value2) == 0);
-    }
-
-    @Test (expected = ArithmeticException.class)
-    public void SummeWithMinValue() {
-        int value1 = Integer.MIN_VALUE;
-        int value2 = -30;
-        assertFalse(testee.summe(value1, value2) == 0);
-    }
 
     // Tests für Subtraktion
-
-    @Test
-    public void subtractionFalse() {
-        int minus1 = 40;
-        int minus2 = 30;
-        assertFalse(testee.subtraction(minus1, minus2) == 20);
-
-    }
-
     @Test
     public void subtractionIsWorkingCorrectly() {
         int minus1 = 40;
@@ -98,38 +82,18 @@ public class SaveCalculatorTest {
         assertTrue(testee.subtraction(minus1, minus2) == 10);
 
     }
-
     @Test
-    public void subtractionEqualsZero() {
+    public void subtractionWithNegativeAndPositiveNumbers(){
         int minus1 = 20;
-        int minus2 = 20;
-        assertTrue(testee.subtraction(minus1, minus2) == 0);
-
+        int minus2 = -40;
+        assertTrue(testee.subtraction(minus1, minus2) == 60);
     }
-
     @Test
-    public void subtractionWithNegativeNumbers() {
+    public void subtractionWithZeroAndPositive() {
         int minus1 = 0;
-        int minus2 = 10;
-        assertTrue(testee.subtraction(minus1, minus2) == -10);
-
+        int minus2 = 40;
+        assertTrue(testee.subtraction(minus1, minus2) == -40);
     }
-
-    @Test
-    public void subtractionWithMinusMinusEqualsPlus() {
-        int minus1 = 20;
-        int minus2 = -20;
-        assertTrue(testee.subtraction(minus1, minus2) == 40);
-
-    }
-    @Test
-    public void subtractionWithTwoNegativeNumbers() {
-        int minus1 = -20;
-        int minus2 = -20;
-        assertTrue(testee.subtraction(minus1, minus2) == 0);
-
-    }
-
     @Test (expected = ArithmeticException.class)
     public void subtractionWithMaxValue() {
         int minus1 = Integer.MAX_VALUE;
@@ -137,28 +101,32 @@ public class SaveCalculatorTest {
         assertTrue(testee.subtraction(minus1, minus2) != 0);
 
     }
-
     @Test (expected = ArithmeticException.class)
     public void subtractionWithMinValue() {
         int minus1 = Integer.MIN_VALUE;
         int minus2 = 1;
         assertTrue(testee.subtraction(minus1, minus2) != 0);
-
     }
-    // Tests für Multipliktion
+    @Test (expected = ArithmeticException.class)
+    public void subtractionWithMinValueAndMaxValue() {
+        int minus1 = Integer.MAX_VALUE;
+        int minus2 = Integer.MIN_VALUE;
+        assertTrue(testee.subtraction(minus1, minus2) != 0);
+    }
     @Test
-    public void multiplicationFalse() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
-        SaveCalculator SaveCalculator = new SaveCalculator();
-        Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
-        method.setAccessible(true);
-
-        int factor1 = 30;
-        int factor2 = 10;
-
-        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
-        assertFalse(result == 400);
-
+    public void subtractionWithTwoZeros() {
+        int minus1 = 0;
+        int minus2 = 0;
+        assertTrue(testee.subtraction(minus1, minus2) == 0);
     }
+    @Test
+    public void subtractionWithTwoNegativeNumbers() {
+        int minus1 = -20;
+        int minus2 = -40;
+        assertTrue(testee.subtraction(minus1, minus2) == 20);
+    }
+
+    // Tests für Multipliktion
     @Test
     public void multiplicationIsWorkingCorrectly() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
         SaveCalculator SaveCalculator = new SaveCalculator();
@@ -187,7 +155,7 @@ public class SaveCalculatorTest {
     }
 
     @Test
-    public void multiplicationEqualsZero() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
+    public void multiplicationWithZeroAndPositiveNumber() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
         SaveCalculator SaveCalculator = new SaveCalculator();
         Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
         method.setAccessible(true);
@@ -200,32 +168,18 @@ public class SaveCalculatorTest {
 
     }
     @Test
-    public void multiplicationWithNegativeNumbers() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
+    public void multiplicationWithPositiveAndNegativeNumbers() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
         SaveCalculator SaveCalculator = new SaveCalculator();
         Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
         method.setAccessible(true);
 
-        int factor1 = -10;
-        int factor2 = 10;
+        int factor1 = 10;
+        int factor2 = -10;
 
         double result = (double) method.invoke(SaveCalculator, factor1, factor2);
         assertTrue(result == -100);
 
     }
-    @Test
-    public void multiplicationWithMinusMinusEqualsPlus() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
-        SaveCalculator SaveCalculator = new SaveCalculator();
-        Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
-        method.setAccessible(true);
-
-        int factor1 = -20;
-        int factor2 = -20;
-
-        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
-        assertTrue(result == 400);
-
-    }
-
     @Test (expected = InvocationTargetException.class)
     public void multiplicationWithMaxValue() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
         SaveCalculator SaveCalculator = new SaveCalculator();
@@ -251,6 +205,30 @@ public class SaveCalculatorTest {
         double result = (double) method.invoke(SaveCalculator, factor1, factor2);
         assertFalse(result == 0);
     }
+    @Test (expected = InvocationTargetException.class)
+    public void multiplicationWithMaxValueAndMinValue() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
+        SaveCalculator SaveCalculator = new SaveCalculator();
+        Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
+        method.setAccessible(true);
+
+        int factor1 = Integer.MAX_VALUE;
+        int factor2 = Integer.MIN_VALUE;
+
+        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        assertTrue(result != 0);
+    }
+    @Test
+    public void multiplicationWithTwoZeros() throws NoSuchMethodException, SecurityException, InvocationTargetException, IllegalAccessException {
+        SaveCalculator SaveCalculator = new SaveCalculator();
+        Method method = SaveCalculator.class.getDeclaredMethod("multiplication", Integer.class, Integer.class);
+        method.setAccessible(true);
+
+        int factor1 = 0;
+        int factor2 = -0;
+
+        double result = (double) method.invoke(SaveCalculator, factor1, factor2);
+        assertTrue(result == 0);
+    }
 
     // Tests für Division
     @Test
@@ -260,39 +238,25 @@ public class SaveCalculatorTest {
         assertTrue(testee.division(numerator, denominator) == 2);
 
     }
-    @Test
-    public void divisionFalse() {
+    @Test (expected = AssertionError.class)
+    public void divisionWithNegativeAndPositiveNumbers() {
         int numerator = 10;
-        int denominator = 5;
-        assertFalse(testee.division(numerator, denominator) == 3);
+        int denominator = -5;
+        assertFalse(testee.division(numerator, denominator) == -2);
 
     }
-    @Test
-    public void divisionEqualsOne() {
-        int numerator = 20;
+    @Test (expected = AssertionError.class)
+    public void divisionWithZeroAndPositiveNumber() {
+        int numerator = 0;
         int denominator = 20;
         assertTrue(testee.division(numerator, denominator) == 1);
     }
-    @Test (expected = ArithmeticException.class)
-    public void divisionEqualsZero() {
-        int numerator = 10;
-        int denominator = 0;
-        assertTrue(testee.division(numerator, denominator) == 0);
-    }
-
     @Test (expected = AssertionError.class)
-    public void divisionWithMinusMinusEqualsPlus() {
-        int numerator = -20;
-        int denominator = -10;
-        assertTrue(testee.division(numerator, denominator) == 0.5);
-    }
-
-    @Test (expected = AssertionError.class)
-    public void divisionWithMaxValue() {
+    public void divisionWithMaxValueAndMinValue() {
         int numerator = Integer.MAX_VALUE;
-        double denominator = 0.5;
+        double denominator = Integer.MIN_VALUE;
         double result = numerator / denominator;
-        assertEquals(0.5,result,0);
+        assertEquals(0,result,0);
     }
     @Test (expected = AssertionError.class)
     public void divisionWithMinValue() {
@@ -300,21 +264,36 @@ public class SaveCalculatorTest {
         int denominator = 5;
         assertEquals(0,testee.division(numerator, denominator),0);
     }
+    @Test (expected = AssertionError.class)
+    public void divisionWithMaxValue() {
+        int numerator = Integer.MAX_VALUE;
+        double denominator = 0.5;
+        double result = numerator / denominator;
+        assertEquals(0,result,0);
+    }
+    @Test (expected = AssertionError.class)
+    public void divisionWithTwoZeros() {
+        int numerator = 0;
+        double denominator = 0;
+        double result = numerator / denominator;
+        assertEquals(0,result,0);
+    }
+    @Test (expected = AssertionError.class)
+    public void divisionWithTwoNegativeNumbers() {
+        int numerator = -10;
+        double denominator = -20;
+        double result = numerator / denominator;
+        assertEquals(0,result,0);
+    }
+
     //Power
     @Test
     public void powerIsWorkingCorrectly() {
         int powerValue = 5;
         assertEquals(25,testee.power(powerValue), 0);
     }
-
     @Test
-    public void powerWithZero() {
-        int powerValue = 0;
-        assertEquals(0,testee.power(powerValue), 0);
-    }
-
-    @Test
-    public void powerWithNegativeNumber() {
+    public void powerWithTwoNegativeNumbers() {
         int powerValue = -5;
         assertEquals(25,testee.power(powerValue), 0);
     }
@@ -330,5 +309,11 @@ public class SaveCalculatorTest {
         int powerValue = Integer.MIN_VALUE;
         assertTrue(testee.power(powerValue) != 0);
     }
+    @Test (expected = AssertionError.class)
+    public void powerWithZeros() {
+        int powerValue = 0;
+        assertTrue(testee.power(powerValue) != 0);
+    }
+
 
 }
