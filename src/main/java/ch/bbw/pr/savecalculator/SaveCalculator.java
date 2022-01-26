@@ -51,6 +51,23 @@ public class SaveCalculator {
 		return powerValue * powerValue;
 	}
 
+	protected int protect( int protect) throws ArithmeticException
+	{
+		long value = (long) protect + (long) protect;
+		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
+			throw new ArithmeticException();
+		}
+		return protect + protect;
+	}
+	int paket( int paket) throws ArithmeticException
+	{
+		long value = (long) paket + (long) paket;
+		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
+			throw new ArithmeticException();
+		}
+		return paket + paket;
+	}
+
 
 	//pow
 	//sqrt

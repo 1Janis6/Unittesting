@@ -315,5 +315,18 @@ public class SaveCalculatorTest {
         assertTrue(testee.power(powerValue) != 0);
     }
 
+    //Protected Method
+    @Test
+    public void protectIsWorkingCorrectly() {
+        int protect = 20;
+        assertTrue(testee.protect(protect) == 40);
+    }
+    //Package Method
+    @Test
+    public void paketIsWorkingCorrectly() {
+        int paket = 20;
+        assertTrue(testee.protect(paket) == 40);
+    }
+
 
 }
