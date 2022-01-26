@@ -54,7 +54,7 @@ public class SaveCalculatorTest {
         int value2 = 50;
         assertTrue(testee.summe(value1, value2) != 0);
     }
-    @Test (expected = AssertionError.class)
+    @Test
     public void SummeWithMinValue() {
         int value1 = Integer.MIN_VALUE;
         int value2 = 30;
